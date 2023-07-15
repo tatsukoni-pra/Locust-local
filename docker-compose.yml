@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  python:
+    build: .
+    container_name: 'python'
+    ports:
+      - "8089:8089"
+    tty: true
+    volumes:
+      - .:/app/
