@@ -6,11 +6,12 @@ Set up environment
 ```
 docker-compose build (Execute only the first time.)
 docker-compose up -d
-docker exec -it python sh
 ```
 
 Execute Test
 ```
+docker-compose up -d
 docker exec -it python locust
-Access to http://localhost:8089/
 ```
+
+And, access to http://localhost:8089/.
